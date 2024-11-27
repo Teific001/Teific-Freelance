@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+
+.image {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    animation: blink 1.5s infinite; /* Infinite blinking */
+  }
+
+  .light {
+    animation-delay: 0s; /* Start with the light image */
+  }
+
+  .no-light {
+    animation-delay: 0s; /* Offset for no-light image */
+  }
+
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    50.01%, 100% {
+      opacity: 0;
+    }
+  }
