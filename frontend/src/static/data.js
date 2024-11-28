@@ -92,6 +92,14 @@ export const FooterData = [
     },
     {
       index: 3,
+      imageUrl: require('../Assets/images/Harsh Jain 2.png'),
+      name: "Harsh Jain",
+      designation: "Manager",
+      flag: false,
+      link: "https://www.linkedin.com/in/harsh-jain-%F0%9F%87%AE%F0%9F%87%B3-5792a0272/"
+    },
+    {
+      index: 4,
       imageUrl: require('../Assets/images/Prerit Rastogi 1.png'),
       name: "Prerit Rastogi",
       designation: "Marketing Manager",
@@ -99,7 +107,7 @@ export const FooterData = [
       link: "https://www.linkedin.com/in/prerit-rastogi-7042b0289/"
     },
     {
-      index: 4,
+      index: 5,
       imageUrl: require('../Assets/images/Aryan Saini 1.png'),
       name: "Aryan Saini",
       designation: "Hardware Manager",
