@@ -1,13 +1,14 @@
 import React from 'react'
-import HeroBg1 from '../../Assets/images/HeroBg.png'
-import HeroBg2 from '../../Assets/images/Group 1000000912.png'
+import HeroBg1 from '../../Assets/images/hero1.png'
+import HeroBg2 from '../../Assets/images/hero2.png'
 import { slideAnimation } from '../../motion/motion'
 import {motion} from 'motion/react'
 const Hero = () => {
   return (
     <div className='static' >
       <div className='relative left-0 w-full h-full top-0'>
-      <img src={HeroBg1} alt='bg-hero' className='bg-cover w-full top-3 md:top-4 -left-[0.2rem] lg:top-[2.2rem] lg:-left-[0.35rem] image light '/>
+      {/* <img src={HeroBg1} alt='bg-hero' className='bg-cover w-full top-3 md:top-4 -left-[0.2rem] lg:top-[2.2rem] lg:-left-[0.35rem] image light '/> */}
+      <img src={HeroBg1} alt='bg-hero' className='bg-cover w-full  image light '/>
       <img src={HeroBg2} alt='bg-hero' className='bg-cover w-full  no-light '/>
       </div>
      

@@ -117,6 +117,8 @@ const ThreeModel = ({ id }) => {
             </div>
 
             {/* Buttons for rotation */}
+            {/* Here this is a button which on click make a rotation of camera to its inital position */}
+            <button className="absolute  rounded-full border w-8 h-8 top-4 left-32 " onClick={()=> setRotationTarget([-1.483, 0.365, 0.207])}></button>
 
             <button
               onClick={rotateHorizontal}
