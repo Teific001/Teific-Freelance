@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Drone } from "../Models/Drone";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { easing } from "maath";
-import Frame from "../../Assets/images/Frame 88.png";
+import Frame from "../../Assets/images/Frame 88 (1).png";
 import Framebg from "../../Assets/images/Frame 16 bg.png";
 import Frameup from "../../Assets/images/Frame 69.png";
 import Frame39 from "../../Assets/images/Frame 39.png";
@@ -76,7 +76,7 @@ const ThreeModel = ({ id }) => {
 
   const handleSetCamera = () =>{
     console.log("clicked")
-   
+   setRandom(0);
     
     setRotationTarget( [0, 0, 0]);
   }
@@ -207,8 +207,8 @@ const ThreeModel = ({ id }) => {
       <div className="bg-black px-2 right-[4.4rem] text-white absolute z-50 text-xl -bottom-[8.58rem] hidden xl:block">{zoomLevel}m</div>
       <div className={`bg-black ${random === 0 ? "px-7":"px-4"} py-2 right-[4.4rem] text-white absolute z-50 text-xl -bottom-[3.8rem] hidden xl:block`}>{random %360}°</div>
          <div>
-          <img src={SetCamera} alt=""/>
-          <button className="absolute z-50 w-8 h-8 border rounded-full top-[0.7rem] left-[8rem]" onClick={handleSetCamera}></button>
+          <img src={SetCamera} alt="" className="hidden top-2 left-8 xl:block absolute"/>
+          <button className="xl:block absolute z-50 w-8 h-8 border rounded-full top-[0.7rem] left-[8rem] hidden" onClick={handleSetCamera}></button>
          </div>
          
           
