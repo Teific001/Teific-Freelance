@@ -7,6 +7,7 @@ import Frame from "../../Assets/images/Frame 88.png";
 import Framebg from "../../Assets/images/Frame 16 bg.png";
 import Frameup from "../../Assets/images/Frame 69.png";
 import Frame39 from "../../Assets/images/Frame 39.png";
+import SetCamera from '../../Assets/images/Group 1000000939.png'
 import { Bulb } from "../Models/Bulb";
 import {Ambu} from '../Models/Ambu'
 
@@ -205,7 +206,11 @@ const ThreeModel = ({ id }) => {
 ></div>
       <div className="bg-black px-2 right-[4.4rem] text-white absolute z-50 text-xl -bottom-[8.58rem] hidden xl:block">{zoomLevel}m</div>
       <div className={`bg-black ${random === 0 ? "px-7":"px-4"} py-2 right-[4.4rem] text-white absolute z-50 text-xl -bottom-[3.8rem] hidden xl:block`}>{random %360}°</div>
-          {/* <button className="absolute z-50 w-8 h-8 border rounded-full top-[0.7rem] left-[8rem]" onClick={handleSetCamera}></button> */}
+         <div>
+          <img src={SetCamera} alt=""/>
+          <button className="absolute z-50 w-8 h-8 border rounded-full top-[0.7rem] left-[8rem]" onClick={handleSetCamera}></button>
+         </div>
+         
           
           </div>
         </div>
