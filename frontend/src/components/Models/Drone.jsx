@@ -2,11 +2,12 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Drone(props) {
+export function Drone( {rotationCamera}) {
   const { nodes, materials } = useGLTF('/dji_fvp_-_sdc_performance_edition.glb')
+  console.log(rotationCamera);
   return (
-    <group {...props} dispose={null}>
-      <group rotation={[-1.483, 0.365, 0.207]}>
+    <group  dispose={null}>
+      <group rotation={rotationCamera}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0, 1.017, -0.135]} rotation={[0.015, 0, 0]} scale={3.531}>
             <group rotation={[-Math.PI / 2, 0, 0]} scale={0.283}>

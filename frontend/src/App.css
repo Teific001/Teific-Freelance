@@ -58,3 +58,25 @@ body::-webkit-scrollbar-thumb
       opacity: 0;
     }
   }
+
+  /* Custom track for vertical-range class */
+
+
+/* Custom thumb styling */
+input[type="range"].vertical-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background: #292929; /* Indigo Thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"].vertical-range::-moz-range-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #292929;
+  border-radius: 50%;
+  cursor: pointer;
+}

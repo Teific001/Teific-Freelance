@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 export function Ambu(props) {
   const { nodes, materials } = useGLTF('/microscope_swift_sw380b.glb')
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} >
       <group position={[0, -0.007, 0]} rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
