@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import OrganizationOverviewPage from './pages/OrganizationOverviewPage';
 import AboutPage from './pages/AboutPage';
-import Loader from './components/Loader/Loader';
 import HomePage from './pages/HomePage';
 import WhyTeificPage from './pages/WhyTeificPage';
 import ContactPage from './pages/ContactPage';

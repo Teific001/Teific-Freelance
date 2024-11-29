@@ -1,7 +1,6 @@
 import React from "react";
 import WhyLogo from "../../Assets/images/whyteificbg.png";
 import Circle from "../../Assets/images/Ellipse 219.png";
-import Line from "../../Assets/images/Subtract.png";
 import { slideAnimation } from "../../motion/motion";
 import { motion } from "motion/react";
 const WhyTeificHero = () => {

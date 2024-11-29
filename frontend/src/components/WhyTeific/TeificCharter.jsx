@@ -11,11 +11,11 @@ const TeificCharter = () => {
         <h2 className="text-3xl font-bold text-center lg:text-right">Teific Technology <span className="text-[#FBC93E]">Charter</span>  </h2>
       <div className="w-full flex justify-center "> 
         <div className="flex gap-7 overflow-x-auto">
-          <img src={Excellence} alt="image" />
-          <img src={Collaboration} alt="image" />
-          <img src={Sustainablility} alt="image" />
-          <img src={Continous} alt="image" />
-          <img src={Social} alt="image" />
+          <img src={Excellence} alt="image1" />
+          <img src={Collaboration} alt="imag2" />
+          <img src={Sustainablility} alt="imag3" />
+          <img src={Continous} alt="imag4" />
+          <img src={Social} alt="imag5" />
         </div>
       </div>
     </div>

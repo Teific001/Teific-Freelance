@@ -114,7 +114,7 @@ const ThreeModel = ({ id }) => {
 
         {/* Use CameraRig to manage rotations with smooth transition */}
         <CameraRig rotationTarget={rotationTarget} zoomLevel={zoomLevel}>
-          {id === 1 && <Drone rotationCamera={rotationCamera} />}
+          {id === 1 && <Drone rotationCamera={rotationCamera} setRotationCamera={setRotationCamera} />}
           {id === 2 && <Ambu />}
           {id === 3 && <Bulb />}
         </CameraRig>
