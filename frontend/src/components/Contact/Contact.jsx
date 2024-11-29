@@ -25,7 +25,7 @@ const Contact = () => {
 
     try {
       await axios.post(
-        "http://localhost:7000/getintouch",
+         process.env.REACT_APP_BACKEND_URL +"getintouch",
         {
           fullName,
           email,
