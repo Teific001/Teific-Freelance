@@ -18,7 +18,7 @@ const AboutHero = () => {
         exit="exit"
         viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
         variants={slideAnimation("right")}
-        className="w-full text-center  lg:w-1/3 absolute md:h-full lg:right-28 px-10 lg:text-justify text-balance flex flex-col top-0 gap-4  justify-center"
+        className="w-full text-center  lg:w-1/3 hidden lg:absolute md:h-full lg:right-28 px-10 lg:text-justify text-balance lg:flex flex-col top-0 gap-4  justify-center"
       >
         <h2 className="text-xl md:text-3xl font-bold">
           Organization <span className="text-[#FBC93E]">Overview</span>
