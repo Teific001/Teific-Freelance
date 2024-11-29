@@ -99,7 +99,7 @@ const ThreeModel = ({ id }) => {
         {(id === 1 || id === 2) && <Environment preset="studio" />}
 
         {/* OrbitControls only active for mobile screens */}
-        {isMobile && (
+        {((isMobile) || ((id === 2 || id ===3) )) && (
           <OrbitControls
             enableZoom={true}
             enablePan={true}
@@ -109,6 +109,8 @@ const ThreeModel = ({ id }) => {
             ref={orbitRef}
           />
         )}
+
+
 
         {/* Use CameraRig to manage rotations with smooth transition */}
         <CameraRig rotationTarget={rotationTarget} zoomLevel={zoomLevel}>
