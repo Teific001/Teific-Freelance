@@ -80,3 +80,17 @@ input[type="range"].vertical-range::-moz-range-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
+
+
+.blink {
+  animation: blink 1s ease-out infinite;
+}
+
+@keyframes blink {
+  0%, 80%, 100% {
+    color: #FBC93E; /* Current color */
+  }
+  50% {
+    color: white; /* White color */
+  }
+}

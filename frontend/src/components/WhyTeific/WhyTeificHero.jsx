@@ -16,7 +16,7 @@ const WhyTeificHero = () => {
         className="text-center lg:w-1/2 flex flex-col gap-4 px-10 justify-center lg:text-justify"
       >
         <h2 className="text-3xl font-bold">
-          Why <span className="text-[#FBC93E]">Teific </span>Technology?
+          Why <span className="text-[#FBC93E] blink">Teific </span>Technology?
         </h2>
         <p>
           Teific Technology is your trusted partner for innovative solutions in
