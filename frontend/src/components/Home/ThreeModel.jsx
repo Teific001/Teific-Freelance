@@ -208,7 +208,7 @@ const ThreeModel = ({ id }) => {
       <div className={`bg-black ${random === 0 ? "px-7":"px-4"} py-2 right-[4.4rem] text-white absolute z-50 text-xl -bottom-[3.8rem] hidden xl:block`}>{random %360}°</div>
          <div>
           <img src={SetCamera} alt="" className="hidden top-2 left-8 xl:block absolute"/>
-          <button className="xl:block absolute z-50 w-8 h-8 border rounded-full top-[0.7rem] left-[8rem] hidden" onClick={handleSetCamera}></button>
+          <button className="xl:block absolute z-50 w-8 h-8  rounded-full top-[0.7rem] left-[8rem] hidden" onClick={handleSetCamera}></button>
          </div>
          
           
