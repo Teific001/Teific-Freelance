@@ -113,11 +113,16 @@ const ThreeModel = ({ id }) => {
           onChange={(e) => {
             const camera = e.target.object; // Access the camera object
             // console.log("Rotation" + rotationTarget)
-            console.log("Camera Position:", camera.position.toArray()); // Log position as array
-            console.log("Camera Rotation:", camera.rotation.toArray()); // Log rotation as array
+            // console.log("Camera Position:", camera.position.toArray()); // Log position as array
+            // console.log("Camera Rotation:", camera.rotation.toArray()); // Log rotation as array
             // setInterval(() => {
             //   handleRandom();
             // }, 4000);
+
+            // const rotationInDegrees = camera.rotation.toArray().map((angle) => (angle * 180) / Math.PI);
+            // console.log("Camera Rotation (degrees):", rotationInDegrees);
+
+            
             
             console.log(random);
           }}
