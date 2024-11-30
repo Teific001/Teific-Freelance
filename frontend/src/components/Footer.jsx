@@ -91,10 +91,14 @@ const Footer = () => {
         <div>© 2024 Teific Technology Pvt. Ltd</div>
         <div>
             <ul className="flex text-xs md:text-base gap-5 flex-row md:gap-8 flex-wrap">
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-                <li>Refund Policy</li>
-                <li>Warranty</li>
+                <Link to='/terms-and-conditions'> <li>Terms of Service</li></Link>
+                <Link to='/privacy-policy'><li>Privacy Policy</li></Link>
+                <Link to='/refund-policy'><li>Refund Policy</li></Link>
+                <Link to='/acknowledgments'> <li>Acknowledgments</li></Link>
+               
+                
+                
+               
             </ul>
         </div>
       </motion.div>
