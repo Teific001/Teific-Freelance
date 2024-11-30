@@ -8,11 +8,11 @@ const Refund = () => {
       <Header position={true} />
       <div className="my-36">
         <div className="w-full items-center flex justify-center ">
-          <div className="w-1/2 flex flex-col gap-10">
-            <h2 className="text-[#FBC93ECC] text-6xl font-bold">
+          <div className="w-full px-10 md:w-1/2  flex flex-col gap-10">
+            <h2 className="text-[#FBC93ECC] text-4xl md:text-6xl  font-bold">
             Shipping and Refund Policy
             </h2>
-            <h3 className="text-5xl">
+            <h3 className="text-3xl md:text-5xl">
               Teific Technology Pvt. Ltd. Shipping and Refund Policy
             </h3>
            
