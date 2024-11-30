@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb
     position: absolute;
     /* width: 100%;
     height: 100%; */
-    object-fit: cover;
+    /* object-fit: cover; */
     animation: blink 2s infinite; /* Infinite blinking */
   }
 
