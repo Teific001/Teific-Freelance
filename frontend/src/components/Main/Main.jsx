@@ -4,7 +4,7 @@ import { ReactComponent as Mouse } from "../../Assets/images/magic-mouse_1.svg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
-import EVO from "../../Assets/images/Drone.png";
+import EVO from "../../Assets/images/PSX_20241201_003517.png";
 import Header from "../Header";
 import HeroBg1 from "../../Assets/images/hero1.png";
 import HeroBg2 from "../../Assets/images/hero2.png";
