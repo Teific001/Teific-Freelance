@@ -13,7 +13,7 @@ const Header = ({ position }) => {
     <div
       className={` ${
         position ? "my-7" : "absolute top-7 "
-      } z-[10000000000] w-full flex justify-between lg:items-center lg:px-36 px-7 `}
+      } z-[100] w-full flex justify-between lg:items-center lg:px-36 px-7 `}
     >
       <Toaster/>
       <Link to="/">
