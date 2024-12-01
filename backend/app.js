@@ -14,7 +14,7 @@ const allowedOrigins = [
 
 // Configure CORS to allow your frontend domain
 const corsOptions = {
-    origin: 'https://teific-freelance-frontend.vercel.app/',
+    origin: 'https://teific-freelance-frontend.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   };
