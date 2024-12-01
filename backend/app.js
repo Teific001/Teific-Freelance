@@ -12,16 +12,15 @@ const allowedOrigins = [
     'http://localhost:3000', // Local development front-end URL
 ];
 
-app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true, // Allow cookies
-}));
+// Configure CORS to allow your frontend domain
+const corsOptions = {
+    origin: 'https://teific-freelance-frontend.vercel.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+  };
+  
+  app.use(cors(corsOptions));
+  
 // Health check route
 app.get('/health', (req, res) => {
     res.status(200).send('Server is running');

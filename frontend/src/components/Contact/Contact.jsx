@@ -24,7 +24,7 @@ const Contact = () => {
     }
 
     try {
-      console.log( process.env.REACT_APP_BACKEND_URL)
+   
       await axios.post(
          process.env.REACT_APP_BACKEND_URL +"getintouch",
         {
