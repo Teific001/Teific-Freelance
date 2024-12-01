@@ -7,11 +7,21 @@ const cors = require('cors');
 dotenv.config();
 
 app.use(express.json());
-app.use(cors({
-    origin: process.env.FRONTEND_URL, // The front-end URL
-    credentials: true, // Allow cookies and other credentials
-}));
+const allowedOrigins = [
+    process.env.FRONTEND_URL, // Production front-end URL
+    'http://localhost:3000', // Local development front-end URL
+];
 
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true, // Allow cookies
+}));
 // Health check route
 app.get('/health', (req, res) => {
     res.status(200).send('Server is running');
