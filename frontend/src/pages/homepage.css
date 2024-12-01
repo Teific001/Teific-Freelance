@@ -2,20 +2,20 @@
   --neon-text-color: #a3a3a3;
   --neon-border-color: #a3a3a3;
 }
-.main_head {
+.herohead {
   position: relative;
   width: 100%;
   /* background-color: antiquewhite; */
   min-height: 100vh !important;
-  overflow: hidden;
+  overflow: hidden !important;
   z-index: 1000000000000000000000000;
 }
 
-.main_head span {
+.herohead span {
   color: #facf39;
 }
 
-.main_head h1 {
+.herohead h1 {
   position: absolute;
   top: 50%;
   left: 50%;
