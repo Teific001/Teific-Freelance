@@ -12,7 +12,7 @@ const Header = ({ position }) => {
   return (
     <div
       className={` ${
-        position ? "my-7" : "absolute top-14 "
+        position ? "my-7" : "absolute top-10 "
       } z-[10000000000000000000000] w-full flex justify-between lg:items-center lg:px-36 px-7 `}
     >
       <Toaster/>
