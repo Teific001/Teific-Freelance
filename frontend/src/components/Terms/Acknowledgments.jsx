@@ -7,13 +7,13 @@ const Acknowledgments = () => {
     <div>
       <Header/>
       <div className="my-36">
-        <div className="w-full items-center flex justify-center ">
+        <div className="w-full items-center flex justify-center text-center ">
           <div className="w-full px-10 md:w-1/2 flex flex-col gap-10">
             <h2 className="text-[#FBC93ECC] text-3xl md:text-6xl font-bold ">
             Acknowledgments
             </h2>
             <div>
-            <ul className="list-decimal  md:text-2xl flex flex-col gap-4 ">
+            <ul className="  md:text-2xl flex flex-col gap-4 ">
   <li>Keshav Raina</li>
   <li>Harsh Jain</li>
   <li>Mohammad Muzammil</li>

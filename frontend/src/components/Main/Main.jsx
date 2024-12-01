@@ -495,7 +495,7 @@ function Main() {
             <p className="lg:text-2xl  empower">Empowering ease of your life</p>
           </div>
           <div className="product_image">
-            <img src={EVO} alt="" srcSet="" />
+            {/* <img src={EVO} alt="" srcSet="" /> */}
           </div>
           <div className="header">
             <Header />
