@@ -14,12 +14,14 @@ const allowedOrigins = [
 
 // Configure CORS to allow your frontend domain
 const corsOptions = {
-    origin: 'https://teific-freelance-frontend.vercel.app',
+    origin: 'https://teific-freelance-frontend.vercel.app', // Your frontend domain
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   };
   
   app.use(cors(corsOptions));
+  
   
 // Health check route
 app.get('/health', (req, res) => {
